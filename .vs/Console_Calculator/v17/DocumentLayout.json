@@ -28,10 +28,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{44782E9E-B8C7-44A0-B7F8-8084801794F4}|Console_Calculator\\Console_Calculator.csproj|c:\\users\\hellingout\\source\\repos\\console_calculator\\console_calculator\\sum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44782E9E-B8C7-44A0-B7F8-8084801794F4}|Console_Calculator\\Console_Calculator.csproj|solutionrelative:console_calculator\\sum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44782E9E-B8C7-44A0-B7F8-8084801794F4}|Console_Calculator\\Console_Calculator.csproj|c:\\users\\hellingout\\source\\repos\\console_calculator\\console_calculator\\console_calculator.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{44782E9E-B8C7-44A0-B7F8-8084801794F4}|Console_Calculator\\Console_Calculator.csproj|solutionrelative:console_calculator\\console_calculator.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,8 +37,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HellingOut\\source\\repos\\Console_Calculator\\Console_Calculator\\Program.cs",
+              "RelativeDocumentMoniker": "Console_Calculator\\Program.cs",
+              "ToolTip": "C:\\Users\\HellingOut\\source\\repos\\Console_Calculator\\Console_Calculator\\Program.cs",
+              "RelativeToolTip": "Console_Calculator\\Program.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAUwDsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T18:09:22.747Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -53,8 +63,7 @@
               "RelativeToolTip": "Console_Calculator\\Multiply.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T18:34:55.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T18:34:55.501Z"
             },
             {
               "$type": "Document",
@@ -66,8 +75,7 @@
               "RelativeToolTip": "Console_Calculator\\Substraction.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T18:32:29.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T18:32:29.088Z"
             },
             {
               "$type": "Document",
@@ -79,8 +87,7 @@
               "RelativeToolTip": "Console_Calculator\\Operation.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T18:29:32.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T18:29:32.809Z"
             },
             {
               "$type": "Document",
@@ -92,8 +99,7 @@
               "RelativeToolTip": "Console_Calculator\\Sum.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T18:29:20.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T18:29:20.731Z"
             },
             {
               "$type": "Document",
@@ -105,8 +111,7 @@
               "RelativeToolTip": "Console_Calculator\\Division.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T19:01:26.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T19:01:26.218Z"
             },
             {
               "$type": "Document",
@@ -116,34 +121,9 @@
               "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Telegram Desktop\\Program.cs",
               "ToolTip": "C:\\Users\\HellingOut\\Downloads\\Telegram Desktop\\Program.cs",
               "RelativeToolTip": "..\\..\\..\\Downloads\\Telegram Desktop\\Program.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAABYAAAABAAAA",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAAGwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T18:45:46.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Console_Calculator.csproj",
-              "DocumentMoniker": "C:\\Users\\HellingOut\\source\\repos\\Console_Calculator\\Console_Calculator\\Console_Calculator.csproj",
-              "RelativeDocumentMoniker": "Console_Calculator\\Console_Calculator.csproj",
-              "ToolTip": "C:\\Users\\HellingOut\\source\\repos\\Console_Calculator\\Console_Calculator\\Console_Calculator.csproj",
-              "RelativeToolTip": "Console_Calculator\\Console_Calculator.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-07T18:29:29.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\HellingOut\\source\\repos\\Console_Calculator\\Console_Calculator\\Program.cs",
-              "RelativeDocumentMoniker": "Console_Calculator\\Program.cs",
-              "ToolTip": "C:\\Users\\HellingOut\\source\\repos\\Console_Calculator\\Console_Calculator\\Program.cs",
-              "RelativeToolTip": "Console_Calculator\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T18:09:22.747Z",
               "EditorCaption": ""
             }
           ]

@@ -20,3 +20,4 @@ C:\Users\HellingOut\source\repos\Console_Calculator\Console_Calculator\obj\Debug
 C:\Users\HellingOut\source\repos\Console_Calculator\Console_Calculator\obj\Debug\net8.0\Console_Calculator.pdb
 C:\Users\HellingOut\source\repos\Console_Calculator\Console_Calculator\obj\Debug\net8.0\Console_Calculator.genruntimeconfig.cache
 C:\Users\HellingOut\source\repos\Console_Calculator\Console_Calculator\obj\Debug\net8.0\ref\Console_Calculator.dll
+C:\Users\HellingOut\source\repos\Console_Calculator\Console_Calculator\obj\Debug\net8.0\Console_Calculator.sourcelink.json

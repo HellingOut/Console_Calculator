@@ -1,10 +1,100 @@
 ﻿using System.Text.RegularExpressions;
 using CalcConsole;
+using Castle.Facilities.Startable;
+using Castle.MicroKernel.Registration;
+using Castle.MicroKernel.SubSystems.Configuration;
+using Castle.Windsor;
 using Operations;
+using static System.Net.Mime.MediaTypeNames;
+
+public interface IOperation {
+    public string name { get; }
+}
+
+public interface IOperationProvider
+{
+    public IEnumerable<Operation> Get();
+}
+
+public interface IMenu<out T>
+{
+    public IMenu<T> Show();
+    public IMenuItemSelector<T> ItemSelector { get; }
+}
+
+public interface IMenuItemSelector<out T>
+{
+    public T Select();
+}
+
+public interface IOperationMenuItemSelector : IMenuItemSelector<Operation>
+{
+
+}
+
+public interface IMenuItemSelectorProvider
+{
+    public int GetMenuItemId();
+}
+
+internal class LocalInstaller : IWindsorInstaller
+{
+    public void Install(IWindsorContainer container, IConfigurationStore store)
+    {
+        container.Register(
+            Component.For<IWindsorContainer>().Instance(container),
+            Component.For<Application>()
+                     .StartUsingMethod("Run"),
+            /* Будет но позже
+            Component.For<IOperationMenuItemSelector>()
+                     .ImplementedBy<OperationMenuItemSelector>()
+                     .LifestyleTransient(),
+            Component.For<IMenuItemSelectorProvider>()
+                     .ImplementedBy<OperationMenuItemSelectorView>()
+                     .LifestyleTransient(),
+            Component.For<IOperationProvider>()
+                     .ImplementedBy<OperationProvider>(),
+
+            Component.For<IMenu<IOperation>>()
+                     .ImplementedBy<OperationMenu>()
+                     .LifestyleTransient(),
+            */
+            Component.For<Operation>()
+                     .ImplementedBy<Sum>(),
+            Component.For<Operation>()
+                     .ImplementedBy<Substraction>(),
+            Component.For<Operation>()
+                     .ImplementedBy<Multiply>(),
+            Component.For<Operation>()
+                     .ImplementedBy<Division>()
+        );
+    }
+}
+
+public class Application
+{
+    public Application(
+        IMenu<IOperation> menu)
+    {
+        this.menu = menu;
+    }
+
+    private IMenu<IOperation> menu;
+
+    public void Run()
+    {
+        Operation operation = (Operation)menu.Show().ItemSelector.Select();
+        List<double> Numbers = new List<double>();
+        Numbers.Add(15.6);
+        Numbers.Add(100);
+        double result = operation.Run(Numbers);
+        Console.WriteLine($"Результат: {result}");
+    }
+}
 
 internal class Program
 {
-    private static void Main(string[] args)
+    private static void Main()
     {
         const ushort MaxAction = 4;
         Console.WriteLine("Выберите действие: ");
@@ -72,7 +162,6 @@ namespace CalcConsole
         {
             string pattern = "^[0-9]";
             string num = Console.ReadLine();
-            Console.WriteLine(num);
             Regex rg = new Regex(pattern);
             if (rg.IsMatch(num) && UInt64.Parse(num) < Max)
                 return UInt16.Parse(num);
